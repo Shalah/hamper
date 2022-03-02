@@ -1,4 +1,33 @@
+#dropdowns {
+  display: flex;
+  margin-left: 155vh;
+}
+
 .container-fluid {
-  background-color: lightblue;
+  background-color: #b8e3ea;
   font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: 40px;
+  padding: 40px;
+}
+
+.contact {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contactItem {
+  margin: 20px;
 }
