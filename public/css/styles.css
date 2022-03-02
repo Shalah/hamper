@@ -17,6 +17,7 @@
 .card {
   margin: 40px;
   padding: 40px;
+  background-color: #f6fafb;
 }
 
 .contact {
@@ -26,6 +27,10 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  background-color: #b8e3ea;
+  border-top: 5px;
+  border-style: solid;
+  border-color: #8eb2df;
 }
 
 .contactItem {
