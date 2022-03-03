@@ -1,6 +1,6 @@
 #dropdowns {
   display: flex;
-  margin-left: 155vh;
+  margin-left: 150vh;
 }
 
 .container-fluid {
@@ -35,4 +35,14 @@
 
 .contactItem {
   margin: 20px;
+}
+
+#signin {
+  width: 50vh;
+  border-style: solid;
+  border-color: #8eb2df;
+  border-width: 2px;
+  padding: 10px;
+  background-color: #f6fafb;
+  align-items: center;
 }
