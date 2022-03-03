@@ -1,0 +1,77 @@
+<!-- Display Article of Clothing -->
+
+<div class='item-card'>
+  <div class='item-card-header'>
+    {{item_type}}
+  </div>
+  <div class='card-body'>
+    <p>
+      Color:
+      {{item_color}}
+    </p>
+    <p>
+      Size:
+      {{item_size}}
+    </p>
+    {{#if is_silk}}
+      <p class='silk'>
+        Silk Fabric
+      </p>
+    {{/if}}
+    {{#if is_linen}}
+      <p class='linen'>
+        Linen Fabric
+      </p>
+    {{/if}}
+  </div>
+</div>
+
+<!-- Edit Specifications -->
+
+<div class='edit-item-container'>
+  <h2>
+    Update Item Details
+  </h2>
+  <form class='edit-item-form'>
+    <label for='item_size'>
+      Size:
+    </label>
+    <br />
+    <textarea id='item_size' name='item_size' rows='2' cols='30'>
+      {{item_size}}
+    </textarea>
+    <br />
+    <label for='item-color'>
+      Color:
+    </label>
+    <br />
+    <textarea id='item-color' name='item-color' rows='5' cols='30'>
+      {{item_color}}
+    </textarea>
+    <br />
+    <label for='item-brand'>
+      Brand:
+    </label>
+    <br />
+    <textarea id='item_brand' name='item_brand' rows='2' cols='30'>
+      {{item_brand}}
+    </textarea>
+    <br />
+    <br />
+    <input type='checkbox' id='is_linen' name='is_linen' value='true' />
+    <label for='is_leather'>
+      Check box if this item is made of LEATHER
+    </label>
+    <br />
+    <br />
+    <input type='checkbox' id='is_linen' name='is_linen' value='true' />
+    <label for='is_linen'>
+      Check box if this item is made of LINEN
+    </label>
+    <br />
+    <button type='submit' value='Submit'>
+      Submit
+    </button>
+  </form>
+</div>
+<script src='/js/edit-item.js'></script>
