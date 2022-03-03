@@ -1,3 +1,4 @@
+/* Homepage */
 #dropdowns {
   display: flex;
   margin-left: 150vh;
@@ -37,6 +38,7 @@
   margin: 20px;
 }
 
+/* Login Page */
 #signup {
   width: 50vh;
   border-style: solid;
@@ -70,4 +72,18 @@
   margin-top: 30vh;
   font-weight: bold;
   color: #8eb2df;
+}
+
+.loginPageHeader {
+  width: 100%;
+  height: 15vh;
+  background-color: #b8e3ea;
+}
+
+.loginPageFooter {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #b8e3ea;
+  height: 15vh;
 }
