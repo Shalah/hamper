@@ -1,0 +1,89 @@
+/* Homepage */
+#dropdowns {
+  display: flex;
+  margin-left: 150vh;
+}
+
+.container-fluid {
+  background-color: #b8e3ea;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: 40px;
+  padding: 40px;
+  background-color: #f6fafb;
+}
+
+.contact {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #b8e3ea;
+  border-top: 5px;
+  border-style: solid;
+  border-color: #8eb2df;
+}
+
+.contactItem {
+  margin: 20px;
+}
+
+/* Login Page */
+#signup {
+  width: 50vh;
+  border-style: solid;
+  border-color: #8eb2df;
+  border-width: 2px;
+  padding: 10px;
+  background-color: #f6fafb;
+  margin: 5vh;
+}
+
+#login {
+  width: 50vh;
+  border-style: solid;
+  border-color: #8eb2df;
+  border-width: 2px;
+  padding: 10px;
+  background-color: #f6fafb;
+  margin: 5vh;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.formHeader {
+  text-align: center;
+}
+
+.or {
+  margin-top: 30vh;
+  font-weight: bold;
+  color: #8eb2df;
+}
+
+.loginPageHeader {
+  width: 100%;
+  height: 15vh;
+  background-color: #b8e3ea;
+}
+
+.loginPageFooter {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #b8e3ea;
+  height: 15vh;
+}
