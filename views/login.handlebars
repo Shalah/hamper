@@ -1,36 +1,73 @@
-<div id='signin'>
-  <div class='field'>
-    <label class='label'>Username</label>
-    <div class='control has-icons-left has-icons-right'>
-      <input class='input is-success' type='text' placeholder='Text input' value='bulma' />
-      <span class='icon is-small is-left'>
-        <i class='fas fa-user'></i>
-      </span>
-      <span class='icon is-small is-right'>
-        <i class='fas fa-check'></i>
-      </span>
+<div class='formContainer'>
+  <div id='login'>
+    <p class='formHeader'>Login</p>
+    <div class='field'>
+      <label class='label'>Email</label>
+      <p class='control has-icons-left has-icons-right'>
+        <input class='input' type='email' placeholder='Email' />
+        <span class='icon is-small is-left'>
+          <i class='fas fa-envelope'></i>
+        </span>
+      </p>
     </div>
-    <p class='help is-success'>This username is available</p>
+    <div class='field'>
+      <label class='label'>Password</label>
+      <p class='control has-icons-left'>
+        <input class='input' type='password' placeholder='Password' />
+        <span class='icon is-small is-left'>
+          <i class='fas fa-lock'></i>
+        </span>
+      </p>
+    </div>
+    <div class='field'>
+      <p class='control'>
+        <button class='button is-success'>
+          Login
+        </button>
+      </p>
+    </div>
   </div>
 
-  <div class='field'>
-    <label class='label'>Email</label>
-    <div class='control has-icons-left has-icons-right'>
-      <input class='input is-danger' type='email' placeholder='Email input' value='hello@' />
-      <span class='icon is-small is-left'>
-        <i class='fas fa-envelope'></i>
-      </span>
-      <span class='icon is-small is-right'>
-        <i class='fas fa-exclamation-triangle'></i>
-      </span>
-    </div>
-    <p class='help is-danger'>This email is invalid</p>
-  </div>
+  <p class='or'>OR</p>
 
-  <div class='field'>
-    <label class='label'>Password</label>
-    <div class='control'>
-      <input class='input' type='text' placeholder='Text input' />
+  <div id='signup'>
+    <p class='formHeader'>Create Account</p>
+    <div class='field'>
+      <label class='label'>Name</label>
+      <div class='control has-icons-left has-icons-right'>
+        <input class='input' type='text' placeholder='Name' />
+        <span class='icon is-small is-left'>
+          <i class='fas fa-user'></i>
+        </span>
+      </div>
+    </div>
+
+    <div class='field'>
+      <label class='label'>Email</label>
+      <div class='control has-icons-left has-icons-right'>
+        <input class='input' type='email' placeholder='Email' />
+        <span class='icon is-small is-left'>
+          <i class='fas fa-envelope'></i>
+        </span>
+      </div>
+    </div>
+
+    <div class='field'>
+      <label class='label'>Password</label>
+      <p class='control has-icons-left'>
+        <input class='input' type='password' placeholder='Password' />
+        <span class='icon is-small is-left'>
+          <i class='fas fa-lock'></i>
+        </span>
+      </p>
+    </div>
+
+    <div class='field'>
+      <p class='control'>
+        <button class='button is-success'>
+          Create Account
+        </button>
+      </p>
     </div>
   </div>
 </div>
