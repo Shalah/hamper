@@ -10,14 +10,11 @@ router.get('/', async (req, res) => {
 // Access to one user account
 // Use the custom middleware before allowing the user to access the account/page
 
-router.get('/painting/:id', withAuth, async (req, res) => {
+router.get('/users/:id', withAuth, async (req, res) => {
   try {
-    const dbPaintingData = await Painting.findByPk(req.params.id);
-
-    const painting = dbPaintingData.get({ plain: true });
-
-    res.render('painting', { painting, loggedIn: req.session.loggedIn });
-  } catch (err) {
+    
+  } 
+  catch (err) {
     console.log(err);
     res.status(500).json(err);
   }
