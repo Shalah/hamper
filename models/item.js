@@ -35,4 +35,4 @@ Item.init(
   }
 );
 
-module.exports = Model;
+module.exports = Item;
