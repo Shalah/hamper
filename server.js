@@ -14,14 +14,14 @@ app.set('view engine', 'handlebars');
 
 const sess = {
     secret: 'Super secret secret',
-    cookie: {},
+    cookie: {},   
     resave: false,
     saveUninitialized: true,
     store: new SequelizeStore({
       db: sequelize
     })
 };
-
+  
 app.use(session(sess));
 
 app.use(require('./controllers/'));
@@ -36,3 +36,4 @@ app.listen(PORT, () => {
   console.log(`Server is listening at http://localhost:${PORT}`);
 });
 });
+   

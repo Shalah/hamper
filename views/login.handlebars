@@ -4,22 +4,26 @@
   </div>
 </header>
 
+
+  {{!-- LOG IN HANDLER --}}
+
 <div class='formContainer'>
-  <div id='login'>
+  <div id="login">
+  <form id="login-form">
     <p class='formHeader'>Login</p>
     <div class='field'>
-      <label class='label'>Email</label>
+      <label for="username-input-login" class='label'>Email</label>
       <p class='control has-icons-left has-icons-right'>
-        <input class='input' type='email' placeholder='Email' />
+        <input class='input' type='email' placeholder='Email' id="username-input-login" />
         <span class='icon is-small is-left'>
           <i class='fas fa-envelope'></i>
         </span>
       </p>
     </div>
     <div class='field'>
-      <label class='label'>Password</label>
+      <label for="password-input-login" class='label' class="form-label">Password</label>
       <p class='control has-icons-left'>
-        <input class='input' type='password' placeholder='Password' />
+        <input class='input' type='password' placeholder='Password' id="password-input-login" />
         <span class='icon is-small is-left'>
           <i class='fas fa-lock'></i>
         </span>
@@ -27,16 +31,21 @@
     </div>
     <div class='field'>
       <p class='control'>
-        <button class='button is-success'>
+        <button class="button is-success" type="submit" id="login-btn" class="btn">
           Login
         </button>
       </p>
     </div>
+  </form>
   </div>
 
   <p class='or'>OR</p>
 
-  <div id='signup'>
+
+  {{!-- SIGN UP HANDLER --}}
+  
+  <form id="signup-form">
+    <div id="signup">
     <p class='formHeader'>Create Account</p>
     <div class='field'>
       <label class='label'>Name</label>
@@ -49,9 +58,9 @@
     </div>
 
     <div class='field'>
-      <label class='label'>Email</label>
+      <label class='label' for="username-input-signup">Email</label>
       <div class='control has-icons-left has-icons-right'>
-        <input class='input' type='email' placeholder='Email' />
+        <input class='input' type='email' placeholder='Email' id="username-input-signup"/>
         <span class='icon is-small is-left'>
           <i class='fas fa-envelope'></i>
         </span>
@@ -59,24 +68,28 @@
     </div>
 
     <div class='field'>
-      <label class='label'>Password</label>
+      <label class='label' for="password-input-signup">Password</label>
       <p class='control has-icons-left'>
-        <input class='input' type='password' placeholder='Password' />
+        <input class='input' type='password' placeholder='Password' id="password-input-signup" />
         <span class='icon is-small is-left'>
           <i class='fas fa-lock'></i>
         </span>
       </p>
     </div>
-
     <div class='field'>
       <p class='control'>
-        <button class='button is-success'>
+        <button class= "button is-success" type="submit" id="signup-btn" class="btn">
           Create Account
         </button>
       </p>
     </div>
-  </div>
+    </div>
+  </form>
+  
 </div>
+
+<script src="/js/login.js"></script>
+<script src="/js/signup.js"></script>
 
 <footer class='loginPageFooter'>
   <div>
