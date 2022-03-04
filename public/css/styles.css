@@ -87,3 +87,8 @@
   background-color: #b8e3ea;
   height: 15vh;
 }
+
+/* Create Order */
+.newOrderContainer {
+  display: flex;
+}

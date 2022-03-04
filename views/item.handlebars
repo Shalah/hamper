@@ -1,77 +1,25 @@
-<!-- Display Article of Clothing -->
+{{>nav}}
+<h1>New Order</h1>
+<br/>
+<div class="newOrderContainer">
 
-<div class='item-card'>
-  <div class='item-card-header'>
-    {{item_type}}
+  <select class="form-select" aria-label="Default select example">
+    <option selected>Select color category</option>
+    <option value="1">Dark</option>
+    <option value="2">Light</option>
+    <option value="3">White</option>
+  </select>
+
+  <select class="form-select" aria-label="Default select example">
+    <option selected>Select the material</option>
+    <option value="1">Leather</option>
+    <option value="2">Linen</option>
+    <option value="3">Cotton</option>
+  </select>
+
+  <div class="input-group flex-nowrap">
+    <span class="input-group-text" id="addon-wrapping"></span>
+    <input type="text" class="form-control" placeholder="Enter brand name" aria-label="Brand-name" aria-describedby="addon-wrapping">
   </div>
-  <div class='card-body'>
-    <p>
-      Color:
-      {{item_color}}
-    </p>
-    <p>
-      Size:
-      {{item_size}}
-    </p>
-    {{#if is_silk}}
-      <p class='silk'>
-        Silk Fabric
-      </p>
-    {{/if}}
-    {{#if is_linen}}
-      <p class='linen'>
-        Linen Fabric
-      </p>
-    {{/if}}
-  </div>
-</div>
 
-<!-- Edit Specifications -->
-
-<div class='edit-item-container'>
-  <h2>
-    Update Item Details
-  </h2>
-  <form class='edit-item-form'>
-    <label for='item_size'>
-      Size:
-    </label>
-    <br />
-    <textarea id='item_size' name='item_size' rows='2' cols='30'>
-      {{item_size}}
-    </textarea>
-    <br />
-    <label for='item-color'>
-      Color:
-    </label>
-    <br />
-    <textarea id='item-color' name='item-color' rows='5' cols='30'>
-      {{item_color}}
-    </textarea>
-    <br />
-    <label for='item-brand'>
-      Brand:
-    </label>
-    <br />
-    <textarea id='item_brand' name='item_brand' rows='2' cols='30'>
-      {{item_brand}}
-    </textarea>
-    <br />
-    <br />
-    <input type='checkbox' id='is_linen' name='is_linen' value='true' />
-    <label for='is_leather'>
-      Check box if this item is made of LEATHER
-    </label>
-    <br />
-    <br />
-    <input type='checkbox' id='is_linen' name='is_linen' value='true' />
-    <label for='is_linen'>
-      Check box if this item is made of LINEN
-    </label>
-    <br />
-    <button type='submit' value='Submit'>
-      Submit
-    </button>
-  </form>
 </div>
-<script src='/js/edit-item.js'></script>
