@@ -1,7 +1,10 @@
 /* Homepage */
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+
 #dropdowns {
   display: flex;
-  margin-left: 150vh;
+  margin-left: 165vh;
 }
 
 .container-fluid {
@@ -18,6 +21,7 @@
 .card {
   margin: 40px;
   padding: 40px;
+  padding-top: 35px;
   background-color: #f6fafb;
 }
 
@@ -36,6 +40,56 @@
 
 .contactItem {
   margin: 20px;
+}
+
+.plate {
+  width: 410px;
+  margin: 5% auto;
+  margin-top: 2%;
+}
+.shadow {
+  color: #fff;
+  font-family: Arvo;
+  font-weight: bold;
+  text-shadow: -3px -3px 0 #8eb2df, 3px -3px 0 #8eb2df, -3px 3px 0 #8eb2df, 3px 3px 0 #8eb2df,
+    4px 4px 0 #fff, 5px 5px 0 #fff, 6px 6px 0 #fff, 7px 7px 0 #fff;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
+  transform: scaleY(0.7);
+  -webkit-transform: scaleY(0.7);
+  -moz-transform: scaleY(0.7);
+  margin: 0;
+  text-align: center;
+}
+.script {
+  font-family: 'Seaweed Script';
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+  margin: 0;
+}
+.script span {
+  background-color: #8eb2df;
+  padding: 0 0.3em;
+}
+.script:before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  width: 100%;
+  border-bottom: 3px solid #fff;
+}
+.text1 {
+  font-size: 50px;
+}
+.text2 {
+  font-size: 90px;
+}
+.text3 {
+  font-size: 75px;
 }
 
 /* Login Page */
@@ -91,4 +145,8 @@
 /* Create Order */
 .newOrderContainer {
   display: flex;
+}
+
+#itemHeader {
+  text-align: center;
 }
