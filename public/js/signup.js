@@ -1,9 +1,9 @@
 const signupForm = async function(event) {
   event.preventDefault();
 
-  const nameEl = document.querySelector('#name-input-login');
-  const emailEl = document.querySelector('#email-input-signup');
-  const passwordEl = document.querySelector('#password-input-signup');
+  const nameEl = document.getElementById('nameInputSignup');
+  const emailEl = document.getElementById('emailInputSignup');
+  const passwordEl = document.getElementById('passwordInputSignup');
 
   const response = await fetch('/api/user', {
     
@@ -21,7 +21,7 @@ const signupForm = async function(event) {
     document.location.replace('/');
   } else {
     alert('Failed to sign up');
-  }
+  } 
 };
 
 document.querySelector('#signup-form').addEventListener('submit', signupForm);

@@ -2,7 +2,7 @@ const loginForm = async function(event) {
   // prevents the page for reloading everytime
   event.preventDefault();
 
-  const emailEl = document.querySelector('#email-input-signup');
+  const emailEl = document.querySelector('#email-input-login');
   const passwordEl = document.querySelector('#password-input-login');
 
   // This is for the login session that get user data
@@ -18,10 +18,10 @@ const loginForm = async function(event) {
   if (response.ok) {
     document.location.replace('/');
     alert(' Success login in'); // To be deleted
-    console.log(success)
+    console.log('success')
   } else {
-    alert('Failed to login');
-    console.log(failed)
+    alert('Failed to login!!');
+    console.log('failed')
 
   }
 };
