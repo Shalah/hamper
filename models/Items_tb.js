@@ -1,18 +1,26 @@
 const { Model, DataTypes } = require("sequelize");
+const { Order } = require(".");
 const sequelize = require("../config/connection");
 
 class Items_tb extends Model {}
 
 Items_tb.init(
+
+
   {
-    item_id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
+    id:{
+      type:DataTypes.INTEGER,
       autoIncrement: true,
-      primaryKey: true,
+      allowNull:false,
+      primaryKey:true
     },
-    item: {
+
+      description: {
       type: DataTypes.STRING,
+      allowNull: false,
+    },
+    price: {
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
   },
