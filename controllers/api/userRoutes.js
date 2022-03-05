@@ -1,71 +1,68 @@
-const router = require("express").Router();
-const { User } = require("../../models");
 
-// THis part create the new user
-// 
-router.post("/", async (req, res) => {
+//////////////////////////////
+
+const router = require('express').Router();
+const { User } = require('../../models');
+
+
+// This is used to create a new user
+router.post('/', async (req, res) => {
   try {
-    const dbUserData = await User.create({
-      username: req.body.username,
-      email: req.body.email,
+    const newUser = await User.create({
+      //name: req.body.name,
+      email:req.body.email,
       password: req.body.password,
     });
 
     req.session.save(() => {
+      req.session.userId = newUser.id;
+      req.session.name = newUser.name;
+      req.session.email = newUser.email;
       req.session.loggedIn = true;
 
-      res.status(200).json(dbUserData);
+      res.json(newUser);
     });
-  } 
-  catch (err) {
-    console.log(err);
+  } catch (err) {
     res.status(500).json(err);
   }
 });
 
-// This is for the login
-// it looks in the databse to find the exact email
-
-router.post("/login", async (req, res) => {
+// This is used to login using matching username
+router.post('/login', async (req, res) => {
   try {
-    const dbUserData = await User.findOne({
+    const user = await User.findOne({
       where: {
-        email: req.body.email,
+        name: req.body.name,
       },
     });
 
-    if (!dbUserData) {
-      res
-        .status(400)
-        .json({ message: "This is an incorrect email and/or password.\n Enter a valid email and password" });
+    if (!user) {
+      res.status(400).json({ message: 'There is no user associated with this account' });
       return;
     }
 
-    // This checks the user password to see if it matches
-    const validPassword = await dbUserData.checkPassword(req.body.password);
+    const validPassword = user.checkPassword(req.body.password);
 
     if (!validPassword) {
-      res
-        .status(400)
-        .json({ message: "This is an incorrect email and/or password.\n Enter a valid email and password" });
+      res.status(400).json({ message: 'There is no user associated with this account' });
       return;
     }
 
     req.session.save(() => {
+      req.session.userId = user.id;
+      req.session.name = user.name;
+      req.session.email = user.email;
       req.session.loggedIn = true;
 
-      res
-        .status(200)
-        .json({ user: dbUserData, message: "You are logged in to your account" });
+      res.json({ user, message: 'You are logged in' });
     });
   } catch (err) {
-    console.log(err);
-    res.status(500).json(err);
+    res.status(400).json({ message: 'There is no user associated with this account. Try again' });
   }
 });
 
-// This is for logging out
-router.post("/logout", (req, res) => {
+// This is used to log out
+router.post('/logout', (req, res) => {
   if (req.session.loggedIn) {
     req.session.destroy(() => {
       res.status(204).end();
