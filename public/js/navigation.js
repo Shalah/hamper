@@ -1,9 +1,7 @@
-console.log('Test');
-
 document.getElementById('signOut').onclick = function () {
   location.href = '/';
 };
 
-document.getElementById('newOrder').onclick = function () {
+document.getElementById('newItem').onclick = function () {
   location.href = '/item';
 };
