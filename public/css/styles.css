@@ -92,6 +92,11 @@
   font-size: 75px;
 }
 
+#logo {
+  width: 100%;
+  height: auto;
+}
+
 /* Login Page */
 #signup {
   width: 50vh;
