@@ -2,7 +2,6 @@ const loginForm = async function(event) {
   // prevents the page for reloading everytime
   event.preventDefault();
 
-  const nameEl = document.querySelector('#name-input-login');
   const emailEl = document.querySelector('#email-input-signup');
   const passwordEl = document.querySelector('#password-input-login');
 
@@ -10,7 +9,6 @@ const loginForm = async function(event) {
   const response = await fetch('/user/login', {
     method: 'POST',
     body: JSON.stringify({
-      name: nameEl.value,
       email: emailEl.value,
       password: passwordEl.value,
     }),

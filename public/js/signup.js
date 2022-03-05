@@ -1,6 +1,7 @@
 const signupForm = async function(event) {
   event.preventDefault();
 
+  const nameEl = document.querySelector('#name-input-login');
   const emailEl = document.querySelector('#email-input-signup');
   const passwordEl = document.querySelector('#password-input-signup');
 
@@ -9,6 +10,7 @@ const signupForm = async function(event) {
     // This is for the login session to ge the user data when they sign up
     method: 'POST',
     body: JSON.stringify({
+      name: nameEl.value,
       email: emailEl.value,
       password: passwordEl.value,
     }),
