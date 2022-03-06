@@ -13,4 +13,8 @@ router.get('/item', async (req, res) => {
   res.render('item');
 });
 
+router.get('/settings', async (req, res) => {
+  res.render('settings');
+});
+
 module.exports = router;

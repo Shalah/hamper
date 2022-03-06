@@ -1,6 +1,7 @@
 /* Homepage */
 @import url(https://fonts.googleapis.com/css?family=Arvo:700);
 @import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 #dropdowns {
   display: flex;
@@ -20,9 +21,12 @@
 
 .card {
   margin: 40px;
-  padding: 40px;
+  padding: 20px;
   padding-top: 35px;
   background-color: #f6fafb;
+  border-style: solid;
+  border-width: 7px;
+  border-color: #8eb2df;
 }
 
 .contact {
@@ -36,6 +40,7 @@
   border-top: 5px;
   border-style: solid;
   border-color: #8eb2df;
+  font-family: 'Varela Round', sans-serif;
 }
 
 .contactItem {
@@ -107,6 +112,10 @@
   background-color: #d4eff3;
 }
 
+h1 {
+  font-family: 'Varela Round', sans-serif;
+}
+
 /* Login Page */
 #signup {
   width: 50vh;
@@ -171,4 +180,11 @@
   display: flex;
   justify-content: center;
   margin-top: 4%;
+}
+
+/* Settings page */
+.settingsContainer {
+  display: block;
+  width: 50%;
+  margin: auto;
 }

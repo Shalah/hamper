@@ -18,9 +18,8 @@ material.addEventListener('change', function (event) {
   console.log(material.value);
 });
 
-// brand.addEventListener('keypress', function (event) {
-//   event.target = brand.;
-//   console.log(brand.);
-// });
+brand.addEventListener('change', function (event) {
+  console.log(event.target.value);
+});
 
 console.log('Test');
