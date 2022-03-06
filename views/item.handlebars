@@ -3,30 +3,30 @@
 <br/>
 <div class="newOrderContainer">
 
-  <select class="form-select" aria-label="Default select example">
+  <select id="type" class="form-select" aria-label="Default select example">
     <option selected>Select the type</option>
-    <option value="1">Shirt</option>
-    <option value="2">Pants</option>
-    <option value="3">Blouse</option>
-    <option value="4">Skirt</option>
-    <option value="5">Blazer</option>
-    <option value="6">Coat</option>
-    <option value="7">Sweater</option>
-    <option value="8">Dress</option>
+    <option value="shirt">Shirt</option>
+    <option value="pants">Pants</option>
+    <option value="blouse">Blouse</option>
+    <option value="skirt">Skirt</option>
+    <option value="blazer">Blazer</option>
+    <option value="coat">Coat</option>
+    <option value="sweater">Sweater</option>
+    <option value="dress">Dress</option>
   </select>
 
-  <select class="form-select" aria-label="Default select example">
+  <select id="color" class="form-select" aria-label="Default select example">
     <option selected>Select color category</option>
-    <option value="1">Dark</option>
-    <option value="2">Light</option>
-    <option value="3">White</option>
+    <option value="dark">Dark</option>
+    <option value="light">Light</option>
+    <option value="white">White</option>
   </select>
 
-  <select class="form-select" aria-label="Default select example">
+  <select id="material" class="form-select" aria-label="Default select example">
     <option selected>Select the material</option>
-    <option value="1">Leather</option>
-    <option value="2">Linen</option>
-    <option value="3">Cotton</option>
+    <option value="leather">Leather</option>
+    <option value="linen">Linen</option>
+    <option value="cotton">Cotton</option>
   </select>
 
   <div class="input-group flex-nowrap">
@@ -34,4 +34,8 @@
     <input type="text" class="form-control" placeholder="Enter brand name" aria-label="Brand-name" aria-describedby="addon-wrapping">
   </div>
 
+</div>
+
+<div class="btnContainer">
+  <button id="addBtn" type="button" class="btn btn-info">Add Item</button>
 </div>
