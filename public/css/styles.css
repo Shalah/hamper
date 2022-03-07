@@ -117,6 +117,17 @@ h1 {
   font-family: 'Varela Round', sans-serif;
 }
 
+/* Nav bar*/
+#navLogo {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+#navTeamLogo {
+  width: 7rem;
+  height: 3rem;
+}
+
 /* Login Page */
 #signup {
   width: 50vh;
@@ -163,8 +174,8 @@ h1 {
 }
 
 #hamperLogo {
-  width: 10vw;
-  height: 12vh;
+  width: 8rem;
+  height: 8rem;
 }
 
 .loginPageFooter {
@@ -179,16 +190,19 @@ h1 {
 }
 
 #teamLogo {
-  width: 10vw;
-  height: 12vh;
+  width: 12rem;
+  height: 8rem;
 }
 
 /* Create Order */
 .newOrderContainer {
   display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 #itemHeader {
+  margin-top: 5%;
   text-align: center;
 }
 

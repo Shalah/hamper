@@ -36,4 +36,5 @@ function newFormHandler(event) {
 }
 
 // addBtn.addEventListener('click', addCard);
+
 function addCard() {}
