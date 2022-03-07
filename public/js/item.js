@@ -28,10 +28,9 @@ brand.addEventListener('change', function (event) {
   console.log(event.target.value);
 });
 
+// Settings page
 document.getElementById('settings').onclick = function () {
   location.href = '/settings';
 };
-
-// Settings page
 
 console.log('Test');
