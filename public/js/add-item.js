@@ -1,6 +1,7 @@
 const addBtn = document.getElementById('addBtn');
 
 function newFormHandler(event) {
+  console.log( 'L 4')
   event.preventDefault();
 
   const item_type = document.querySelector('#item_type').value;
@@ -35,6 +36,8 @@ function newFormHandler(event) {
   }
 }
 
-// addBtn.addEventListener('click', addCard);
+addBtn.addEventListener('click', newFormHandler);
 
-function addCard() {}
+//function addCard() {}
+
+
