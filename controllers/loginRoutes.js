@@ -1,10 +1,14 @@
 const router = require('express').Router();
 
-const withAuth = require('../utils/auth')
+const withAuth = require('../utils/auth');
 
-router.get('/', async (req, res) => {
+router.get('/homepage', async (req, res) => {
   // Send the rendered Handlebars.js template back as the response
   res.render('homepage');
+});
+
+router.get('/', async (req, res) => {
+  res.render('login');
 });
 
 // Access to one user account
@@ -12,17 +16,15 @@ router.get('/', async (req, res) => {
 
 router.get('/users/:id', withAuth, async (req, res) => {
   try {
-    
-  } 
-  catch (err) {
+  } catch (err) {
     console.log(err);
     res.status(500).json(err);
   }
 });
 
-router.get('/login', (req, res) => {
+router.get('/', (req, res) => {
   if (req.session.loggedIn) {
-    res.redirect('/');
+    res.redirect('/homepage');
     return;
   }
   res.render('login');
@@ -30,12 +32,11 @@ router.get('/login', (req, res) => {
 
 router.get('/signup', (req, res) => {
   if (req.session.loggedIn) {
-    res.redirect('/');
+    res.redirect('/homepage');
     return;
   }
 
   res.render('signup');
 });
 
-
-module.exports = router; 
+module.exports = router;
