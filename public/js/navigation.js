@@ -9,3 +9,7 @@ document.getElementById('newItem').onclick = function () {
 document.getElementById('settings').onclick = function () {
   location.href = '/settings';
 };
+
+document.getElementById('myHamper').onclick = function () {
+  location.href = '/myhamper';
+};
