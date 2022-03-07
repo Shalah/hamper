@@ -1,6 +1,3 @@
-
-//////////////////////////////
-
 const router = require('express').Router();
 const { User } = require('../../models');
 
@@ -8,6 +5,7 @@ const { User } = require('../../models');
 // This is used to create a new user
 router.post('/', async (req, res) => {
   try {
+    console.log(req.body);
     const newUser = await User.create({
       name: req.body.name,
       email:req.body.email,
@@ -23,27 +21,33 @@ router.post('/', async (req, res) => {
       res.json(newUser);
     });
   } catch (err) {
+    console.log(err);
     res.status(500).json(err);
+    
   }
 });
 
 // This is used to login using matching username
 router.post('/login', async (req, res) => {
+  console.log(req.body);
   try {
     const user = await User.findOne({
       where: {
-        name: req.body.email,
+        email: req.body.email
       },
     });
 
     if (!user) {
+      console.log(user, 'L 44');
       res.status(400).json({ message: 'There is no user associated with this account' });
       return;
+      
     }
 
     const validPassword = user.checkPassword(req.body.password);
 
     if (!validPassword) {
+      console.log(validPassword, 'L 53');
       res.status(400).json({ message: 'There is no user associated with this account' });
       return;
     }

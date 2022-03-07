@@ -6,7 +6,7 @@ const loginForm = async function(event) {
   const passwordEl = document.querySelector('#password-input-login');
 
   // This is for the login session that get user data
-  const response = await fetch('/user/login', {
+  const response = await fetch('/api/user/login', {
     method: 'POST',
     body: JSON.stringify({
       email: emailEl.value,
