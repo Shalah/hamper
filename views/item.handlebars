@@ -3,7 +3,7 @@
 <br/>
 <div class="newOrderContainer">
 
-  <select id="type" class="form-select" aria-label="Default select example">
+  <select id="item_type" class="form-select" aria-label="Default select example">
     <option selected>Select the type</option>
     <option value="shirt">Shirt</option>
     <option value="pants">Pants</option>
@@ -15,23 +15,31 @@
     <option value="dress">Dress</option>
   </select>
 
-  <select id="color" class="form-select" aria-label="Default select example">
-    <option selected>Select color category</option>
+  <select id="item_tone" class="form-select" aria-label="Default select example">
+    <option selected>Select tone</option>
     <option value="dark">Dark</option>
     <option value="light">Light</option>
     <option value="white">White</option>
   </select>
 
-  <select id="material" class="form-select" aria-label="Default select example">
+  <select id="item_size" class="form-select" aria-label="Default select example">
+    <option selected>Select Size</option>
+    <option value="XL">XL</option>
+    <option value="L">L</option>
+    <option value="M">M</option>
+    <option value="S">S</option>
+  </select>
+
+  <select id="item_material" class="form-select" aria-label="Default select example">
     <option selected>Select the material</option>
-    <option value="leather">Leather</option>
-    <option value="linen">Linen</option>
-    <option value="cotton">Cotton</option>
+    <option id="is_leather" value="leather">Leather</option>
+    <option id="is_linen" value="linen">Linen</option>
+    <option id="is_cotton" value="cotton">Cotton</option>
   </select>
 
   <div class="input-group flex-nowrap">
     <span class="input-group-text" id="addon-wrapping"></span>
-    <input type="text" class="form-control" placeholder="Enter brand name" aria-label="Brand-name" aria-describedby="addon-wrapping">
+    <input id="item_brand" type="text" class="form-control" placeholder="Enter brand name" aria-label="Brand-name" aria-describedby="addon-wrapping" value="">
   </div>
 
 </div>
