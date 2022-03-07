@@ -104,11 +104,13 @@
 #newItem:hover {
   opacity: 0.7;
   background-color: #d4eff3;
+  cursor: pointer;
 }
 
 #myHamper:hover {
   opacity: 0.7;
   background-color: #d4eff3;
+  cursor: pointer;
 }
 
 h1 {
@@ -155,6 +157,14 @@ h1 {
   width: 100%;
   height: 15vh;
   background-color: #b8e3ea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hamperLogo {
+  width: 10vw;
+  height: 12vh;
 }
 
 .loginPageFooter {
@@ -163,6 +173,14 @@ h1 {
   bottom: 0;
   background-color: #b8e3ea;
   height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#teamLogo {
+  width: 10vw;
+  height: 12vh;
 }
 
 /* Create Order */

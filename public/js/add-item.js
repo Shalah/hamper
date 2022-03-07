@@ -12,7 +12,7 @@ function newFormHandler(event) {
   // const item_brand = document.querySelector('#item_brand');
 
   //How to put item_brand value into a variable??
-  const response = fetch(`/api/itemRoutes`, {
+  const response = fetch(`./api/itemRoutes.js`, {
     method: 'POST',
     body: JSON.stringify({
       item_type,
@@ -35,4 +35,5 @@ function newFormHandler(event) {
   }
 }
 
-addBtn.addEventListener('click', newFormHandler);
+// addBtn.addEventListener('click', addCard);
+function addCard() {}
