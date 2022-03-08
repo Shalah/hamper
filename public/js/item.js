@@ -24,14 +24,18 @@ size.addEventListener('change', function (event) {
   console.log(size.value);
 });
 
+// brand.addEventListener('change', function (event) {
+//   console.log(event.target.value);
+// });
+
 brand.addEventListener('change', function (event) {
-  console.log(event.target.value);
+  event.target = brand.value;
+  console.log(brand.value);
 });
 
+// Settings page
 document.getElementById('settings').onclick = function () {
   location.href = '/settings';
 };
-
-// Settings page
 
 console.log('Test');
