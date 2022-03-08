@@ -1,14 +1,4 @@
-<<<<<<< HEAD
-const res = require("express/lib/response");
-=======
-//const res = require("express/lib/response");
->>>>>>> origin
-
 const addBtn = document.getElementById('addBtn');
-
-// 
-
-
 
 // function addCard() {
 //   let type = document.getElementById('item_type').value;
@@ -21,9 +11,6 @@ const addBtn = document.getElementById('addBtn');
 // }
 
 
-
-
-addBtn.addEventListener('click', addCard);
 //document.querySelector('#addBtn').addEventListener('submit', addCard);
 
 
@@ -56,21 +43,18 @@ const addCard = async function(event) {
   });
 
   if (response.ok) {
-<<<<<<< HEAD
-    console.log(response, 'L 34');
-    document.location.replace('/homepage');
-=======
     console.log(response, 'L 46')
     
     alert(' Data sent'); // To be deleted
     console.log('success')
->>>>>>> origin
   } else {
     alert('Failed to send data!!');
     console.log('failed')
 
   }
 };
+
+addBtn.addEventListener('click', addCard);
 
 
 

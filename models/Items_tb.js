@@ -15,15 +15,26 @@ Items_tb.init(
       primaryKey:true
     },
 
-    description: {
+    item_type: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    price: {
-      type: DataTypes.INTEGER,
+    item_tone: {
+      type: DataTypes.STRING,
       allowNull: false,
     },
-
+    item_size: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    item_material: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    item_brand: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
   },
   {
     sequelize,
