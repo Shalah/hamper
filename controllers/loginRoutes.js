@@ -24,7 +24,7 @@ router.post('/users/:id', withAuth, async (req, res) => {
 
 router.post('/', (req, res) => {
   if (req.session.loggedIn) {
-    res.redirect('/homepage');
+    res.redirect('homepage');
     return;
   }
   res.render('login');
@@ -32,7 +32,7 @@ router.post('/', (req, res) => {
 
 router.post('/signup', (req, res) => {
   if (req.session.loggedIn) {
-    res.redirect('/homepage');
+    res.redirect('homepage');
     return;
   }
 
