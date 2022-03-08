@@ -21,4 +21,26 @@ router.get('/myhamper', async (req, res) => {
   res.render('myhamper');
 });
 
+// router.get('/myhamper', async (req, res) => {
+//   const data = [
+//     {
+//       type: 'Shirt',
+//       size: 'L',
+//       tone: 'Light',
+//       material: 'Cotton',
+//       brand: 'Gucci',
+//     },
+//     {
+//       type: 'Pants',
+//       size: 'XL',
+//       tone: 'Dark',
+//       material: 'Leather',
+//       brand: 'XXX',
+//     },
+//   ];
+//   res.render('myhamper', {
+//     items: data,
+//   });
+// });
+
 module.exports = router;
