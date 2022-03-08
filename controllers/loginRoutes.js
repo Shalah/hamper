@@ -2,19 +2,19 @@ const router = require('express').Router();
 
 const withAuth = require('../utils/auth');
 
-router.get('/homepage', async (req, res) => {
+router.post('/homepage', async (req, res) => {
   // Send the rendered Handlebars.js template back as the response
   res.render('homepage');
 });
 
-router.get('/', async (req, res) => {
+router.post('/', async (req, res) => {
   res.render('login');
 });
 
 // Access to one user account
 // Use the custom middleware before allowing the user to access the account/page
 
-router.get('/users/:id', withAuth, async (req, res) => {
+router.post('/users/:id', withAuth, async (req, res) => {
   try {
   } catch (err) {
     console.log(err);
@@ -22,7 +22,7 @@ router.get('/users/:id', withAuth, async (req, res) => {
   }
 });
 
-router.get('/', (req, res) => {
+router.post('/', (req, res) => {
   if (req.session.loggedIn) {
     res.redirect('/homepage');
     return;
@@ -30,7 +30,7 @@ router.get('/', (req, res) => {
   res.render('login');
 });
 
-router.get('/signup', (req, res) => {
+router.post('/signup', (req, res) => {
   if (req.session.loggedIn) {
     res.redirect('/homepage');
     return;

@@ -1,10 +1,4 @@
-//const res = require("express/lib/response");
-
 const addBtn = document.getElementById('addBtn');
-
-// 
-
-
 
 // function addCard() {
 //   let type = document.getElementById('item_type').value;
@@ -17,9 +11,6 @@ const addBtn = document.getElementById('addBtn');
 // }
 
 
-
-
-addBtn.addEventListener('click', addCard);
 //document.querySelector('#addBtn').addEventListener('submit', addCard);
 
 
@@ -62,6 +53,8 @@ const addCard = async function(event) {
 
   }
 };
+
+addBtn.addEventListener('click', addCard);
 
 
 

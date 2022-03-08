@@ -15,25 +15,25 @@ Items_tb.init(
       primaryKey:true
     },
 
-      brand_name: {
+    item_type: {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     },
-    is_leather: {
-      type: DataTypes.BOOLEAN,
+    item_tone: {
+      type: DataTypes.STRING,
+      allowNull: false,
     },
-    is_linen: {
-      type: DataTypes.BOOLEAN,
+    item_size: {
+      type: DataTypes.STRING,
+      allowNull: false,
     },
-    is_cotton: {
-      type: DataTypes.BOOLEAN,
+    item_material: {
+      type: DataTypes.STRING,
+      allowNull: false,
     },
-
-    is_XL: {
-      type: DataTypes.BOOLEAN,
-    },
-    is_L: {
-      type: DataTypes.BOOLEAN,
+    item_brand: {
+      type: DataTypes.STRING,
+      allowNull: false,
     },
   },
   {
@@ -46,13 +46,3 @@ Items_tb.init(
 );
 
 module.exports = Items_tb;
-
-
-
-// const itemtype = () => {
-//   let userChoice;
-//   let 
-//   if (userChoice === 'shirt'){
-    
-//   }
-// }
