@@ -3,7 +3,7 @@ async function editFormHandler(event) {
   const item_type = document.querySelector('#item_type').value;
   const item_size = document.querySelector('#item_size').value;
   const item_tone = document.querySelector('#item_color').value;
-  // const item_brand = document.querySelector('#item_brand').value;
+  const item_brand = document.querySelector('#item_brand').value;
   const is_cotton = document.querySelector('#is_cotton:checked') ? true : false;
   const is_leather = document.querySelector('#is_leather:checked') ? true : false;
   const is_linen = document.querySelector('#is_linen:checked') ? true : false;
@@ -18,7 +18,7 @@ async function editFormHandler(event) {
       item_type,
       item_tone,
       item_size,
-      // item_brand,
+      item_brand,
       is_cotton,
       is_leather,
       is_linen,
