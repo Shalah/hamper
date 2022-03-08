@@ -5,6 +5,7 @@ const Item = require('./item');
 const Order_status = require('./Order_status');
 const OrderItem = require('./OrderItem')
 
+// These are the various relationships between tables
 Order.belongsTo(User, {
   foreignKey: 'user_id',
 });
