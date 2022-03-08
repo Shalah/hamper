@@ -1,5 +1,5 @@
 const cloudName = "semper"; // replace with your own cloud name
-const uploadPreset = "ml_default"; // replace with your own upload preset
+const uploadPreset = "clientprime"; // replace with your own upload preset
 
 const myWidget = cloudinary.createUploadWidget(
   {

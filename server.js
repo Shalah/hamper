@@ -13,6 +13,7 @@ cloudinary.config({
     api_secret: process.env.API_SECRET
 });
 
+
 // const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -49,3 +50,4 @@ sequelize.sync({ force: false }).then(() => {
     console.log(`Server is listening at http://localhost:${PORT}`);
   });
 });
+ 
