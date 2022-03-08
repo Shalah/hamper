@@ -16,11 +16,12 @@ const loginForm = async function(event) {
   });
 
   if (response.ok) {
-    document.location.replace('/');
-    alert(' Success login in'); // To be deleted
+    //window.location.replace('/');
+    //alert(' Success login in'); // To be deleted
+    window.location = "http://localhost:3001/homepage"; // using this to make the redirect work
     console.log('success')
   } else {
-    alert('Failed to login!!');
+    //alert('Failed to login!!');
     console.log('failed')
 
   }

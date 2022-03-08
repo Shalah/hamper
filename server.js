@@ -1,3 +1,4 @@
+
 const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
@@ -12,6 +13,7 @@ cloudinary.config({
     api_key: process.env.API_KEY,
     api_secret: process.env.API_SECRET
 });
+
 
 // const path = require('path');
 const app = express();
@@ -49,3 +51,4 @@ sequelize.sync({ force: false }).then(() => {
     console.log(`Server is listening at http://localhost:${PORT}`);
   });
 });
+ 
