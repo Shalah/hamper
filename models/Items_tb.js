@@ -15,26 +15,15 @@ Items_tb.init(
       primaryKey:true
     },
 
-      brand_name: {
+    description: {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     },
-    is_leather: {
-      type: DataTypes.BOOLEAN,
-    },
-    is_linen: {
-      type: DataTypes.BOOLEAN,
-    },
-    is_cotton: {
-      type: DataTypes.BOOLEAN,
+    price: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
     },
 
-    is_XL: {
-      type: DataTypes.BOOLEAN,
-    },
-    is_L: {
-      type: DataTypes.BOOLEAN,
-    },
   },
   {
     sequelize,
@@ -46,13 +35,3 @@ Items_tb.init(
 );
 
 module.exports = Items_tb;
-
-
-
-// const itemtype = () => {
-//   let userChoice;
-//   let 
-//   if (userChoice === 'shirt'){
-    
-//   }
-// }

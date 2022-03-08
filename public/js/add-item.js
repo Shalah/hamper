@@ -1,3 +1,5 @@
+const res = require("express/lib/response");
+
 const addBtn = document.getElementById('addBtn');
 
 function newFormHandler(event) {
@@ -29,6 +31,7 @@ function newFormHandler(event) {
   });
 
   if (response.ok) {
+    console.log(response, 'L 34');
     document.location.replace('/homepage');
   } else {
     alert('Failed to add item');
