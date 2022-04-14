@@ -3,7 +3,6 @@
 ## Badges
 ![badmath](https://img.shields.io/badge/License-MIT-blue)
 
-![the-Hamper-app](./public/img/the-Hamper-App.png)
 
 ## Description
 Hamper is an application that is designed to be used for a laundry/dry cleaning company. Through this app, the company's customers can have a more personalized and convenient experience. The application acts as a middle man for company and customer by allowing the user to create an account, add items to their "hamper", customize or delete items in their hamper, and update settings like if they want their cleaned clothes delivered or pick them up. They can also set their email preferences to recieve notifications when their order is ready or being delivered along with discounts and current promotions.
